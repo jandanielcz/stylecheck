@@ -2,15 +2,25 @@
 
 namespace Sjuper;
 
-class Document 
+class Document implements Connectable
 {
 
     /** @var string $title */
     private $title;
 
-    public function __construct($title)
+    /** @var string $title */
+    private $id;
+
+    public function __construct($title, $id)
     {
         $this->title = $title;
+        $this->id = $id;
     }
+
+    public function id()
+    {
+        return $this->id();
+    }
+
 
 }
