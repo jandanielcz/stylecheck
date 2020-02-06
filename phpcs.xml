@@ -3,5 +3,5 @@
 	<description>Current practices v. +Inf</description>
 
 	<rule ref="Generic.Commenting.Todo"/>
-    <rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
+	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
 </ruleset>
