@@ -2,6 +2,20 @@
 <ruleset name="UlovDomov">
 	<description>Current practices v. +Inf</description>
 
+	<!-- no todos -->
 	<rule ref="Generic.Commenting.Todo"/>
-	<rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/>
+	<!-- tabs only -->
+	<!-- rule ref="Generic.WhiteSpace.DisallowSpaceIndent"/ -->
+	<!-- only short array syntax -->
+	<rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+	<!-- line length soft max 120 characters -->
+	<rule ref="Generic.Files.LineLength">
+		<properties>
+			<property name="lineLimit" value="120"/>
+			<property name="absoluteLineLimit" value="0"/>
+		</properties>
+	</rule>
+	<!-- 2 lines before function -->
+	<rule ref="Squiz.WhiteSpace.FunctionSpacing"/>
+	<rule ref="c:\code\stylecheck\sniffs"/>
 </ruleset>
